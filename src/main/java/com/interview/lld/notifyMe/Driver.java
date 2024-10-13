@@ -24,12 +24,14 @@ public class Driver {
         NotificationAlertObserver tvDevice1 = new TvAlert(weatherForecast, 1);
         NotificationAlertObserver tvDevice2 = new TvAlert(weatherForecast, 2);
         NotificationAlertObserver tvDevice3 = new TvAlert(weatherForecast, 3);
+        NotificationAlertObserver tvDevice4 = new TvAlert(weatherForecast, 4);
 
         weatherForecast.add(mobileDevice1);
         weatherForecast.add(mobileDevice2);
         weatherForecast.add(tvDevice1);
         weatherForecast.add(tvDevice2);
         weatherForecast.add(tvDevice3);
+        weatherForecast.add(tvDevice4);
 
         Scanner scanner = new Scanner(System.in);
         do {
