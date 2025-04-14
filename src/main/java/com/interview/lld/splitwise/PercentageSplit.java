@@ -11,8 +11,6 @@ import lombok.NoArgsConstructor;
  */
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class PercentageSplit extends Split{
     private Double percentage;
     public PercentageSplit(User user, Double percentage){
