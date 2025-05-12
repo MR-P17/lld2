@@ -19,6 +19,13 @@ public class CallableAndFutureExample {
             return 49;
         };
 
+        Callable<String> task2 = new CallableExample();
+        Future<String> future1 = executor.submit(task2);
+        System.out.println("Waiting for Callable Result ...");
+        String result1 = future1.get();
+        System.out.println("Result1 : " + result1);
+
+
         //Future holds result of asynchronous process.
         Future<Integer> future = executor.submit(task);
         System.out.println("Waiting for the Result ...");
