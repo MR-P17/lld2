@@ -8,7 +8,7 @@ package com.interview.lld.thread.runnable;
 
 public class ThreadExampleRunnable {
     public static void main(String[] args) {
-        Task runnable = new Task();
+        Runnable runnable = new Task();
 
         Thread thread1 = new Thread(runnable);
         Thread thread2 = new Thread(runnable);
